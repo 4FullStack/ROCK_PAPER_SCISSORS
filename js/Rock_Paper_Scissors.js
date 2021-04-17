@@ -46,6 +46,7 @@ function game() {
       
       roundResult.innerHTML="Result of round.................. "+ playRound(playerSelection, computerSelection)+' '+playerWin +" VS "+ computerWin;
 
+      gameResult.innerHTML="";
       if ((computerWin==5) || (playerWin==5)) {
           if (computerWin > playerWin) {
             gameResult.innerHTML="You lose!";
@@ -54,7 +55,7 @@ function game() {
           }
           computerWin = 0;
           playerWin  = 0;
-          
+         
           
         }
     })
